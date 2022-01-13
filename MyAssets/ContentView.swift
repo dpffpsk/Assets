@@ -23,7 +23,7 @@ struct ContentView: View {
         TabView(selection: $selection) {
             
             //TabItem 설정
-            Color.white.tabItem {
+            AssetView().tabItem {
                 Image(systemName: "dollarsign.circle.fill")
                 Text("자산")
             }.tag(Tab.asset)
@@ -46,6 +46,7 @@ struct ContentView: View {
     }
 }
 
+//preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

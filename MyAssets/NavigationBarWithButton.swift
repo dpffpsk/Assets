@@ -17,7 +17,7 @@ struct NavigationBar_WithButton: ViewModifier {
             trailing: Button(action: {print("자산추가버튼 tapped")},
                              label: {Image(systemName: "plus")
                                  Text("자산추가").font(.system(size: 12))}
-                            ).accentColor(.black).padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)).overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black))
+                            ).accentColor(.black).padding(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)).overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black))
             )
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {

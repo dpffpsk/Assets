@@ -17,10 +17,12 @@ enum AssetMenu: String, Identifiable, Decodable {
     case cash
     case realEstate
     
+    //Identifiable 프로토콜을 사용할 경우, id 프로퍼티를 선언해야함
     var id: String {
         return self.rawValue
     }
     
+    //다른 곳(시스템이미지)에서 편리하게 접근할 수 있도록 systemImageName 지정
     var systemImageName: String {
         switch self {
         case .creditScore:

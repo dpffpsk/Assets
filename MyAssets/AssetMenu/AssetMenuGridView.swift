@@ -13,6 +13,7 @@ struct AssetMenuGridView: View {
         [.insurance, .creditCard, .cash, .realEstate]
     ]
     
+    //버튼 스타일 적용해서 gridView 생성
     var body: some View {
         VStack(spacing: 20) {
             ForEach(menuList, id: \.self) { row in
@@ -21,6 +22,7 @@ struct AssetMenuGridView: View {
                         Button("") {
                             print("\(menu.title)버튼 tapped")
                         }
+                        .buttonStyle(AssetMenuButtonStyle(menu: menu))
                     }
                 }
             }
@@ -28,6 +30,7 @@ struct AssetMenuGridView: View {
     }
 }
 
+//preview
 struct AssetMenuGridView_Previews: PreviewProvider {
     static var previews: some View {
         AssetMenuGridView()
