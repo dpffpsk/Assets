@@ -30,6 +30,7 @@ struct PageControl: UIViewRepresentable {
         uiView.currentPage = currentPage
     }
     
+    
     class Coordinator: NSObject {
         var control: PageControl
         

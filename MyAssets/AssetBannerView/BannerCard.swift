@@ -18,7 +18,7 @@ struct BannerCard: View {
 //                Text(banner.description).font(.subheadline)
 //            }
 //        }
-        
+
         Color(banner.backgroundColor).overlay(
             VStack {
                 Text(banner.title).font(.title)

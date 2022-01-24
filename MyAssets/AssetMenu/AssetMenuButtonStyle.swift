@@ -47,8 +47,6 @@ struct AssetMenuButtonStyle_Previews: PreviewProvider {
                 print("")
             }
             .buttonStyle(AssetMenuButtonStyle(menu: .cash))
-            
-            
         }
     }
 }
